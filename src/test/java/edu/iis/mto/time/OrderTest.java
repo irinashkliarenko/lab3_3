@@ -7,13 +7,17 @@ import org.junit.Test;
 
 public class OrderTest {
 
+	private Order order;
+	
 	@Before
 	public void setUp() throws Exception {
+		order = new Order();
 	}
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
+	@Test(expected = OrderExpiredException.class)
+	public void testOrderExpired() {
+		order.submit();
+		order.confirm();
 	}
 
 }
