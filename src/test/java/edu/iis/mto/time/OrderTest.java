@@ -1,14 +1,7 @@
 package edu.iis.mto.time;
 
-import static org.junit.Assert.*;
-
 import org.joda.time.DateTimeConstants;
 import org.joda.time.DateTimeUtils;
-import org.junit.Assert;
-
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.core.IsEqual.equalTo;
-
 import org.junit.Before;
 import org.junit.Test;
 
